@@ -105,3 +105,15 @@ a:hover {
 .center {
     top: 15vh;
   }
+.social-media {
+    width: 250px;
+    height: 225px;
+}
+
+@media only screen 
+and (max-device-width: 812px) {
+    .social-media{
+        width: 100px;
+        height: 75px;
+    }
+}
