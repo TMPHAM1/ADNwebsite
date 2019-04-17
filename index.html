@@ -30,9 +30,9 @@
           <div class="hamburger-list-container" style="top:0;"> 
               <div class="hamburger-list-item" id="home">Home</div>
               <div class="hamburger-list-item" id="videos">Videos</div>
-              <div class="hamburger-list-item" id="gallery">Gallery</div>
+              <!-- <div class="hamburger-list-item" id="gallery">Gallery</div> -->
               <div class="hamburger-list-item" id="about">About</div>
-              <div class="hamburger-list-item" id="services">Services</div>
+              <!-- <div class="hamburger-list-item" id="services">Services</div> -->
               <div class="hamburger-list-item" id="contact">Contact</div>
           </div>
       </div>
@@ -45,15 +45,15 @@
         aria-selected="true">Home</a>
       <a class="nav-item nav-link" id="nav-videos-tab" data-toggle="tab" href="#nav-videos" role="tab" aria-controls="nav-videos"
         aria-selected="false">Videos</a>
-      <a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery"
-        aria-selected="false">Gallery</a>
+      <!-- <a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery"
+        aria-selected="false">Gallery</a> -->
       <div class="nav-item logo" href="">
         <img src="./HTML/assets/images/logo.png">
       </div>
       <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about"
         aria-selected="false">About</a>
-      <a class="nav-item nav-link" id="nav-services-tab" data-toggle="tab" href="#nav-services" role="tab"
-        aria-controls="nav-services" aria-selected="false">Services</a>
+      <!-- <a class="nav-item nav-link" id="nav-services-tab" data-toggle="tab" href="#nav-services" role="tab"
+        aria-controls="nav-services" aria-selected="false">Services</a> -->
       <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
         aria-selected="false">Contact</a>
     </div>
@@ -62,19 +62,30 @@
   <!------    CONTENT FOR EACH TAB  --------->
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-      <div>
-          <h1 class="text-center title">ADN Produtions</h1>
-          <p class="text-center paragraph">Welcome to ADN Productions, where we make high quality videos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa ad nisi rem distinctio in ea animi exercitationem impedit! Molestias hic obcaecati temporibus praesentium voluptatum, sunt vero eaque mollitia? Aut, facere nemo? Molestias omnis repudiandae facere non architecto quod maiores earum reprehenderit minus fugit distinctio nam in ratione ut nobis dignissimos exercitationem quidem enim, explicabo sequi. Iste, perspiciatis. Dolorem aut blanditiis quod earum ipsam cumque cum aliquid rerum repudiandae, et ipsum. Natus, odit molestiae. Id, ex voluptatem. Expedita inventore, soluta et quisquam velit eveniet necessitatibus eligendi dolorum. Nam porro omnis aut iste? Voluptas eum quibusdam aliquid expedita voluptate doloribus molestias.</p>
+      <div class="container col-md-6 center">
+          <h1 class="title text-center">ADN Produtions</h1>
+          <p class="text-center paragraph">Brands today are interacting more than ever with their customers online, through social media and in physical stores. I am passionate about using the power of storytelling to bring brands to life for companies large and small. I'm uniquely positioned to partner with you on your next project. </p>
         
       </div>
     </div>
     <div class="tab-pane fade" id="nav-videos" role="tabpanel" aria-labelledby="nav-video-tab">
         <video id="videoarea" height="250" class="col-md-12" controls="controls" poster="" src=""></video>
+       
+
     <!------------------------ Images for Video Selection Carousel  --------------->
         <div class="row img-gallery" id="playlist">
             <div class="col-md-3" >
+            <div class="thumbnail">
+                <img movieurl="./videos/motion.mp4" src="./screenshot/motion.png" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p>Love You Better</p>
+                </div>
+              </a>
+            </div>
+          </div>
+            <div class="col-md-3" >
               <div class="thumbnail">
-                  <img movieurl="./videos/loveyoubetter.mp4"  src="./screenshot/loveyoubetter2.png" alt="Lights" style="width:100%">
+                  <img movieurl="./videos/loveyoubetter.mp4" src="./screenshot/loveyoubetter2.png" alt="Lights" style="width:100%">
                   <div class="caption">
                     <p>Love You Better</p>
                   </div>
@@ -92,7 +103,7 @@
             </div>
             <div class="col-md-3">
               <div class="thumbnail">
-                  <img movieurl="./videos/final2.mp4"src="./screenshot/23.png" alt="Fjords" style="width:100%">
+                  <img movieurl="./videos/metamorphosis.mp4"src="./screenshot/23.png" alt="Fjords" style="width:100%">
                   <div class="caption">
                     <p>23</p>
                   </div>
@@ -116,10 +127,11 @@
     </div>
     <!--------------------------- About Section -------------------->
     <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-        <div class="container col-md-6 center">
-            <h1 class="text-center title">About Me</h1>
-            <p class="text-center paragraph">Brands today are interacting more than ever with their customers online, through social media and in physical stores. I am passionate about using the power of storytelling to bring brands to life for companies large and small. I'm uniquely positioned to partner with you on your next project. </p>
-          
+        <h1 class="text-center title">About Me</h1> 
+        
+      <div class="container col-md-6">
+        <img class="mx-auto d-block" src="images/Business-Photo.jpg" style="border: white 5px solid; height:350px; width: 300px;"></img>
+        <p class="text-center paragraph">Brands today are interacting more than ever with their customers online, through social media and in physical stores. I am passionate about using the power of storytelling to bring brands to life for companies large and small. I'm uniquely positioned to partner with you on your next project. </p>
         </div>
     </div>
     <div class="tab-pane fade" id="nav-services" role="tabpanel" aria-labelledby="nav-services-tab">
@@ -135,7 +147,7 @@
               
               <div class="row">
               
-                <div class="col-sm-6 col-md-5 text-center fade-up d1">
+                <div class="col-sm-12 col-md-12 text-center fade-up d1">
                   <br>
                   <br>
                   <br>
@@ -145,13 +157,24 @@
                   <h1 class="big-text">Contact Me</h1>
                   
                   <p class="lead">For business inquiries, questions, or to say hello.</p>
-                
+                     <label> Email: <a href="mailto:angelamediaofficial@gmail.com">angelamediaofficial@gmail.com</a></label>
                   <p></p>
                 
                 </div>
-  
+                <div class="container">
+                  <div class="row flex-d justify-content-center">
+                      <div><a href="https://www.instagram.com/angelamedia/" target="_blank"><img style="width: 250px; height: 225px;"class="img-responsive" src='./images/F_icon.svg'></img></a></div>
+                      <div>
+                          <a href="https://www.facebook.com/angelamediaofficial/" target="_blank"><img style="width: 250px; height: 225px;" class="img-responsive" src='./images/instagram.png'></img></a>  
+                      </div>
+                      <div>
+                          <a href="https://www.linkedin.com/in/angeladnguyen"target="_blank"><img class="img-responsive" style="width: 250px; height: 225px; margin-left: 20px;" src='./images/linkedin.png'></img></a> 
+                      </div>
+                      
+                  </div>
+                </div>
 			<!--=== Contact Form ===-->
-				<form id="contact-form" class="col-sm-6 scrollimation fade-right" action="php_mailer/contact.php" method="post"
+				<!-- <form id="contact-form" class="col-sm-6 scrollimation fade-right" action="php_mailer/contact.php" method="post"
 				 novalidate>
 					<div class="form-group">
 						<label class="control-label" for="contact-name">Name</label>
@@ -161,7 +184,7 @@
 							<i class="fa fa-user"></i>
 						</div>
 					</div>
-			<!-- End name input -->
+			End name input
 					<div class="form-group">
 						<label class="control-label" for="contact-mail">Email</label>
 						<div class=" controls">
@@ -170,7 +193,7 @@
 							<i class="fa fa-envelope"></i>
 						</div>
 					</div>
-			<!-- End email input -->
+			End email input
 					<div class="form-group">
 						<label class="control-label" for="contact-message">Message</label>
 						<div class="controls">
@@ -179,13 +202,13 @@
 							<i class="fa fa-comment"></i>
 						</div>
 					</div>
-			<!-- End textarea -->
+			End textarea
 					<p><button name="submit" type="submit" class="btn btn-theme btn-block" data-error-message="Error!"
 						 data-sending-message="Sending..." data-ok-message="Message Sent">Send
 							Message</button></p>
 					<input type="hidden" name="submitted" id="submitted" value="true" />
 
-				</form>
+				</form> -->
 			<!-- End contact-form -->
 			</div><!-- End row -->
 		</div><!-- End container -->

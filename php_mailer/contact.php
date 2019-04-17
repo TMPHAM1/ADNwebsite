@@ -105,13 +105,16 @@ $mail->AltBody = htmlentities($body);
 if(!$mail->send()) {
 	$output['success'] = false;
 	$ouput['messages'][] = $mail->ErrorInfo;
+	header("Location:contact.php");
 	echo json_encode($output);
+	
 	exit;
 } else {
 	$output['success'] = true;
 	$emailSent = true;
+	header("Location:contact.php");
 	echo json_encode($output);
-
+	
 }
 }
 }
