@@ -101,9 +101,7 @@ a:hover {
     overflow: hidden;
     overflow: scroll;
 }
-.hide {
-    display:none;
-}
+
 .center {
     top: 15vh;
   }

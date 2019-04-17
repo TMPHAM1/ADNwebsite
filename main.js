@@ -7,7 +7,7 @@ function initializeApp() {
 function applyClickHandlers() {
     $(".hamburger-list-item").click(navigateHamburger);
     $(".hamburger-menu").click(toggleHamburger);
- $("body").click(checkHamburger);
+//   $(document).not(".hamburger-menu").click(checkHamburger);
 }
 
 function navigateHamburger(event) { 
@@ -17,19 +17,23 @@ function navigateHamburger(event) {
     $(".tab-pane").removeClass("active");
     $(`#nav-${page}`).addClass("show");
     $(`#nav-${page}`).addClass("active");
-    $(".hamburger-list").toggle("hide");
+    $(".hamburger-list").hide();
 
 }
-function checkHamburger(event) {
-   if (event.target.closest(".hamburger-list-container")) {
-       return;
-   }
-   if (!($(".hamburger-list").is(':visible'))) {
-       return;
-   }
-   $(".hamburger-list").hide()
+// function checkHamburger(event) {
+//     console.log("here")
+//    if (event.target.closest(".hamburger-list-container")) {
+//        console.log("in hamburger list")
+//        return;
+//    }
+//    if (!($(".hamburger-list").is(':visible'))) {
+//        console.log("here?")
+//        return;
+//    }
+//    console.log("before hide");
+//    $(".hamburger-list").hide();
 
-}
+// }
 
 function toggleHamburger() {
     $(".hamburger-list").show();
