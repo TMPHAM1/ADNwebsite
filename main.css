@@ -1,18 +1,37 @@
 body {
-    background-color: grey;
+    background-color:rgb(255, 250, 214);
 }
+
+.cover-img {
+    width: 100%;    
+    height: auto;
+}
+.custom-title {
+    margin-top: 3%;
+}
+.nav-media {
+    height: 5vh;
+    
+}
+
 .nav-item {
     margin-top: 2%;
     margin-right: 1%;
     margin-left: 1%;
 }
+.nav-pills .nav-link.active {
+    color: black;
+    opacity: 0.8;
+    margin-bottom: 1px
+}
+
 .hamburger-bar { 
-    background-color: black;
+    background-color: white;
     height: 100px
 }
 .hamburger-menu-lines {
     width: 35px;
-    background-color: white;
+    background-color: black;
     height: 5px;
     margin: 5px 0px
 }
@@ -25,7 +44,7 @@ body {
 .hamburger-list {
 }
 .hamburger-list-container {
-    background-color: white;
+    background-color: #F5F2D0;
     width: 40%;
     position: absolute;
     left: 0;
@@ -33,6 +52,7 @@ body {
     flex-direction: column;
     height: 100vh;
     z-index: 9999;
+    border: solid black 2px;
 }
 .hamburger-list-item {
    padding: 15%;
@@ -40,20 +60,20 @@ body {
 }
 
 .hamburger-list-item:hover {
-    background-color: grey;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .nav {
-    background-color: black;
+    background-color: rgb(255, 250, 214);
 }
 .nav-pills .nav-link.active {
-    background-color: grey;
+    background-color: white;
 }
 a {
-    color: #FFF;
+    color: black;
 }
 a:hover {
-    color: #FFFdd0;
+    color: black;
 }
 .logo {
     margin: 0;
@@ -106,14 +126,19 @@ a:hover {
     top: 15vh;
   }
 .social-media {
-    width: 250px;
-    height: 225px;
+    width: 10%;
+    height: 10%;
 }
 
 @media only screen 
 and (max-device-width: 812px) {
     .social-media{
-        width: 100px;
-        height: 75px;
+        /* width: 100px;
+        height: 75px; */
     }
 }
+.nav-tabs {
+    border-bottom: 2px solid grey;
+    opacity: 0.8;
+}
+
