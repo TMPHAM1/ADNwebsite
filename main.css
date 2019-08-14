@@ -1,3 +1,7 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     background-color:white;
     font-family: "Helvetica Neue"
@@ -310,30 +314,41 @@ a:hover {
           margin-bottom: 50% !important;
       }
     .social-media {
-        float: none !important;
-        margin-left: 7%;
+        /* float: none !important; */
+        /* transform: translateX(17%); */
+        margin-right: 0;    
     }
   
   }
   @media only screen 
-  and (max-device-width: 320px) {
+  and (max-device-width: 321px) {
     .social-media {
-        float: none !important;
+        /* float: none !important; */
         margin-left: 0;
+        /* transform: translateX(7%); */
     }
  
     .logo {
         left: 57%;
     }
 }
+@media only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+   .social-media {
+    transform: translateX(10%);
+   }
+}
     @media only screen 
     and (min-device-width: 768px) 
     and (max-device-width: 1024px) 
     and (-webkit-min-device-pixel-ratio: 2) {
       .social-media {
-          float: none !important;
-          margin-left: 0%;
+          /* float: none !important; */
+          margin-right: 2%;
        
+      }
+      .logo {
+        margin-left: -88px !important;
+
       }
     }
   
