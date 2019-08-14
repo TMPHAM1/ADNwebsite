@@ -15,10 +15,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
   <script src="main.js"></script>
 </head>
 
 <body>
+  <div class="grey-out graphic-focus"></div>
+   
   <!-------- Hamburger Menu ----->
   <div class="col-md-12 d-sm-block d-md-none d-lg-none hamburger-bar">
       <div class="hamburger-menu">
@@ -29,38 +32,37 @@
       <div class="hamburger-list" id="hamburger-list" style="display:none">
           <div class="hamburger-list-container" style="top:0;"> 
               <div class="hamburger-list-item" id="home">Home</div>
-              <div class="hamburger-list-item" id="videos">Videos</div>
-              <!-- <div class="hamburger-list-item" id="gallery">Gallery</div> -->
+              <!-- <div class="hamburger-list-item" id="videos">Videos</div>
+              <div class="hamburger-list-item" id="gallery">Gallery</div>
               <div class="hamburger-list-item" id="about">Resume/CV</div>
-              <!-- <div class="hamburger-list-item" id="services">Services</div> -->
-              <div class="hamburger-list-item" id="contact">Contact</div>
+              <div class="hamburger-list-item" id="services">Services</div> -->
+              <div class="hamburger-list-item" id="contact">About Me</div>
           </div>
       </div>
   </div>
   <!------ Wide Nav Bar ---------------->
-  <nav class="d-none d-md-block">
-    <div class="nav nav-pills nav-tabs justify-content-center" id="nav-tab" role="tablist">
-      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-        aria-selected="true">Home</a>
-      <a class="nav-item nav-link" id="nav-videos-tab" data-toggle="tab" href="#nav-videos" role="tab" aria-controls="nav-videos"
-        aria-selected="false">Videos</a>
-      <!-- <a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery"
-        aria-selected="false">Gallery</a> -->
-      <div class="nav-item logo" href="">
-        <img src="./HTML/assets/images/logo.png">
-      </div>
-      <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about"
-        aria-selected="false">Resume/CV</a>
-      <!-- <a class="nav-item nav-link" id="nav-services-tab" data-toggle="tab" href="#nav-services" role="tab"
-        aria-controls="nav-services" aria-selected="false">Services</a> -->
-      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
-        aria-selected="false">Contact</a>
-        <div style="position: absolute; right:2%; margin-top: 2vh">
-            <a href="https://www.linkedin.com/in/angeladnguyen"target="_blank"><img src= "images/linkedin.jpg" class="nav-media"></a>
-          <a href="https://www.instagram.com/angelamedia/" target="_blank"><img src= "images/instagram.jpg" class="nav-media"></a>
-          <a href="https://www.facebook.com/angelamediaofficial/" target="_blank"><img src="images/facebook.jpg" class="nav-media"></a>
-        </div>    
+  <div class="logo-container">
+    <img class="logo"src="./images/AngelaMedia-logo.png">
+  </div>
+  <nav class="d-none d-md-block  flex-row mx-auto">
+    <div class = "nav-item-container">
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+              aria-selected="true">Home</a>
+            <!-- <a class="nav-item nav-link" id="nav-videos-tab" data-toggle="tab" href="#nav-videos" role="tab" aria-controls="nav-videos"
+              aria-selected="false">Videos</a>
+            <a class="nav-item nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab" aria-controls="nav-gallery"
+              aria-selected="false">Gallery</a>
+      
+            <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about"
+              aria-selected="false">Resume/CV</a>
+            <a class="nav-item nav-link" id="nav-services-tab" data-toggle="tab" href="#nav-services" role="tab"
+              aria-controls="nav-services" aria-selected="false">Services</a> -->
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+              aria-selected="false">About Me</a>
+          </div>
     </div>
+    
   </nav>
 
   <!------    CONTENT FOR EACH TAB  --------->
@@ -68,15 +70,60 @@
   <!--- Landing Page Information-->
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <h1 class="custom-title text-center">Angela Nguyen</h1>
-        
-      <div class="container col-md-6">
-          
-          <img src="images/cover.jpg" class="img-responsive cover-img">
-          <p class="text-center paragraph">Brands today are interacting more than ever with their customers online, through social media and in physical stores. I am passionate about using the power of storytelling to bring brands to life for companies large and small. I'm uniquely positioned to partner with you on your next project. </p>
-        
+          <div class="col-md-12 img-modal">
+              <div class="row pull-right" id="close-modal"> <button id="close-button">X</button></div>
+          <div class="graphic-detail-image-container justify-content-center  row">
+                  <img id="graphic-detail-image" src="./images//Business-Photo.jpg" class="graphic-detail-img">
+          </div>
+          <div class="row justify-content-center">
+              <p class="graphic-detail-desc pargraph text-center" id="graphic-detail-desc">
+              </p>
+          </div>
+      
+            </div>
       </div>
-    </div>
+      
+      <div class="container col-md-8 col-sm-12 video-container">
+          <video id="videoarea" height="550" class="col-md-12" controls="controls" poster="./screenshot/motion.png" src="./videos/motions.mp4"></video>
+          </div>
+          <div class="graphic-container col-md-8 offset-md-2 offset-sm-0">
+              <div class="row">
+                  <div class=" col col-md-12">
+                    <img id="project1" src="./images//row1left.jpg" class="graphic-sample">
+                    <img id="project2" src="./images//row1mid.jpg" class="graphic-sample">
+                    <img id="project3" src="./images//row1right.jpg" class="graphic-sample">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class=" col col-md-12">
+                      <img id="project4" src="./images//row2left.jpg" class="graphic-sample">
+                      <img id="project5" src="./images//row2mid.jpg" class="graphic-sample">
+                      <img id="project6"src="./images//row2right.jpg" class="graphic-sample">
+                    </div>
+              </div>
+              <div class="row">
+                  <div class=" col col-md-12">
+                    <img id="project1" src="./images//row3left.jpg" class="graphic-sample">
+                    <img id="project2" src="./images//row3mid.jpg" class="graphic-sample">
+                    <img id="project3" src="./images//row3right.jpg" class="graphic-sample">
+                  </div>
+              </div>
+          </div>
+          <div class="about-me-container row col-md-8 offset-md-2 col-sm-12 text-center">
+            <h1 class="col-md-8 about-me-header  ">About Me</h1>
+            <div class="col-md-6 about-me-img-container">
+                <img src="./images//angelaprofile.jpeg" class="about-me-img">
+            </div>
+            <div class="col-md-6 pull-right">
+                <p class="text-center paragraph about-me-paragraph">Brands today are interacting more than ever with their customers online, through social media and in physical stores. I am passionate about using the power of storytelling to bring brands to life for companies large and small. I'm uniquely positioned to partner with you on your next project. </p>
+          </div>
+      </div>
+
+<!--           
+          <img src="images/cover.jpg" class="img-responsive cover-img">
+        <p class="text-center paragraph">Brands today are interacting more than ever with their customers online, through social media and in physical stores. I am passionate about using the power of storytelling to bring brands to life for companies large and small. I'm uniquely positioned to partner with you on your next project. </p>
+         -->
+      
     <div class="tab-pane fade" id="nav-videos" role="tabpanel" aria-labelledby="nav-video-tab">
         <video id="videoarea" height="250" class="col-md-12" controls="controls" poster="" src=""></video>
        
@@ -216,16 +263,27 @@
 		</div><!-- End container -->
 	</section><!-- End contact section -->
                 
-              </div>
-              
-            </div>
-          
-          </section>
+             
 
-
-
+</div>
     </div>
   </div>
+
+
+  
+  <footer class="mainfooter fixed-bottom" role="contentinfo">
+ 
+    <div class="row pull-right social-media">
+      <div class="row-lg-12">
+          <ul>
+              <a href="https://www.linkedin.com/in/angeladnguyen"target="_blank"><img src="https://img.icons8.com/color/65/000000/linkedin.png"></a>
+              <a href="https://www.facebook.com/angelamediaofficial/"target="_blank"><img src="https://img.icons8.com/color/65/000000/facebook-new.png"></a>
+              <a href="https://www.instagram.com/angelamedia/"target="_blank"><img src="https://img.icons8.com/color/65/000000/instagram-new.png"></a>
+                <!--  <a href="https://www.linkedin.com/in/angeladnguyen"target="_blank"><img src="https://img.icons8.com/color/65/000000/twitter.png"></a> -->
+          </ul>
+        </div>
+      </div>
+</footer>
   <script src="./contact.js"></script>
 </body>
 

@@ -4,9 +4,21 @@ function initializeApp() {
     applyClickHandlers();
 }
 
+var description = 
+    {"project1": "descrption of project1",
+    "project2": "Description of project2",
+    "project3": "descrption of project3",
+    "project4": "Description of project4",
+    "project5": "descrption of project5",
+    "project6": "Description of project6"
+}
+
 function applyClickHandlers() {
     $(".hamburger-list-item").click(navigateHamburger);
     $(".hamburger-menu").click(toggleHamburger);
+    $(".graphic-sample").click(displayDetails);
+    $("#close-modal").click(closeModal);
+    $(".graphic-focus").click(closeModal);
 //   $(document).not(".hamburger-menu").click(checkHamburger);
 }
 
@@ -19,6 +31,24 @@ function navigateHamburger(event) {
     $(`#nav-${page}`).addClass("active");
     $(".hamburger-list").hide();
 
+}
+function displayDetails(event) {
+    console.log(event.target.src);
+    $("#graphic-detail-image").attr({
+        "src" : event.target.src
+    })
+    
+    $("#graphic-detail-desc").text(description[event.target.id]);
+    $(".graphic-focus").show();
+    $(".img-modal").show();
+
+    var clickedIMage = event.target; 
+}
+
+function closeModal() {
+    console.log("close Modal called");
+    $(".graphic-focus").hide();
+    $(".img-modal").hide();
 }
 // function checkHamburger(event) {
 //     console.log("here")
@@ -39,38 +69,38 @@ function toggleHamburger() {
     $(".hamburger-list").show();
 
 }
-$(function() {
-    $("#playlist img").on("click", function() {
-        $("#playlist img").css({
-            "border": ""
-        });
-        $(this).css({
-            "border": "white 5px solid",
-        })
-        $("#videoarea").attr({
-            "src": $(this).attr("movieurl"),
-            "poster": "",
-            "autoplay": "autoplay"
-        })
-    })
-    $("#playlist img").eq(0).css({
-        "border": "white 5px solid",
-    });
-    $("#videoarea").attr({
-        "src": $("#playlist img").eq(0).attr("movieurl"),
-        "poster": $("#playlist img").eq(0).attr("moviesposter")
-    })
+// $(function() {
+//     $("#playlist img").on("click", function() {
+//         $("#playlist img").css({
+//             "border": ""
+//         });
+//         $(this).css({
+//             "border": "white 5px solid",
+//         })
+//         $("#videoarea").attr({
+//             "src": $(this).attr("movieurl"),
+//             "poster": "",
+//             "autoplay": "autoplay"
+//         })
+//     })
+//     $("#playlist img").eq(0).css({
+//         "border": "white 5px solid",
+//     });
+//     $("#videoarea").attr({
+//         "src": $("#playlist img").eq(0).attr("movieurl"),
+//         "poster": $("#playlist img").eq(0).attr("moviesposter")
+//     })
     
-    $(".nav-item").on("click", function(event) {
-        var currentTab = event.target.id
-        var currentVideo = $("#videoarea").get(0); // trying to grab the video to set it to pause 
-       if (currentTab === "nav-videos-tab") {
-           currentVideo.play();
-           return
-       }
-       else {
-        currentVideo.pause();
-       }
+//     $(".nav-item").on("click", function(event) {
+//         var currentTab = event.target.id
+//         var currentVideo = $("#videoarea").get(0); // trying to grab the video to set it to pause 
+//        if (currentTab === "nav-videos-tab") {
+//            currentVideo.play();
+//            return
+//        }
+//        else {
+//         currentVideo.pause();
+//        }
         
-    })
-})
+//     })
+// })

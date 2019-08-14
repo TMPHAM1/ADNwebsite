@@ -1,10 +1,12 @@
 body {
-    background-color:rgb(255, 250, 214);
+    background-color:white;
+    font-family: "Helvetica Neue"
 }
 
 .cover-img {
     width: 100%;    
     height: auto;
+    margin-top: 5%;
 }
 .custom-title {
     margin-top: 3%;
@@ -13,18 +15,79 @@ body {
     height: 5vh;
     
 }
+.about-me-header{
+    margin-top: 5%;
+   margin-left: 20%;
+}
+.about-me-container {
+    transform: translateX(25%);
+}
+.graphic-sample:hover {
+    opacity: 0.5;
+}
+.graphic-sample {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 33%;
+  }
+  .graphic-detail-img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 50%;
+    /* margin-right: 7% */
+  }
+.nav-tabs {
+    border-color: transparent;
+}
+.nav-tabs .nav-link {
+    border: 0px;
+    border-color:transparent;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: transparent; 
+    border-color:transparent;
+}
+.nav-item-container {   
+    display: flex; 
+    margin-top: 1%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    opacity: 0.7;
+    border-top: 0.2rem rgba(228, 233, 237, 0.3)solid;
+    border-bottom: 0.2rem rgba(228, 233, 237, 0.3) solid;
+}
 
-.nav-item {
+.navbar-toggle {
     margin-top: 2%;
-    margin-right: 1%;
-    margin-left: 1%;
-}
-.nav-pills .nav-link.active {
-    color: black;
-    opacity: 0.8;
-    margin-bottom: 1px
+    padding: 9px 10px !important;
 }
 
+.nav-link {
+    display: block;
+    padding: 1rem 1rem;
+    margin-right: 25vh;
+}
+
+.about-me-img {
+    border-radius: 100%;
+    width: 100%;
+    margin-top: 10%;
+    transform: rotate(270deg);
+}
+
+.about-me-container {
+    margin-top: 5%;
+    margin-bottom: 15% !important;
+    margin:0;
+    
+}
+.about-me-paragraph {
+    margin-top: 10%;
+   margin: 10% !important;
+   padding-top: 10%;
+   margin-bottom: 30% !important;
+}
 .hamburger-bar { 
     background-color: white;
     height: 100px
@@ -41,8 +104,7 @@ body {
     height: 50px;
     padding-top: 30px;
 }
-.hamburger-list {
-}
+
 .hamburger-list-container {
     background-color: #F5F2D0;
     width: 40%;
@@ -64,11 +126,10 @@ body {
     color: black;
 }
 .nav {
-    background-color: rgb(255, 250, 214);
+    margin-top: 1px;
+    transform: translateX(20%);
 }
-.nav-pills .nav-link.active {
-    background-color: white;
-}
+
 a {
     color: black;
 }
@@ -76,13 +137,30 @@ a:hover {
     color: black;
 }
 .logo {
-    margin: 0;
-    margin-top: 10px;
-    margin-right: 2%;
-    margin-left: 2%;
+        max-height: 15%;
+        position: absolute;
+        left: 50%;
+        margin-left: -50px !important;  /* 50% of your logo width */
+        display: block;
+        margin-top: 1%
+}
+.navbar {
+    position: relative;
+}
+.logo-container {
+    min-height: 20vh;
+    background-color: white;
+    border-top: 0.5rem #E0C7DD solid;
+   
+    border-bottom: 0.5rem #E0C7DD solid;
+    width: 100%;
 }
 .title {
     margin-top: 5%;
+}
+.mainfooter {
+    background-color: white;
+    position: fixed
 }
 
 #contact {
@@ -106,10 +184,12 @@ a:hover {
 #videoarea {
     display: flex;
     margin: 0 auto;
+    padding: 0;
     width: 100%    !important;
     height: auto   !important;
     max-height: 500px;
     min-height: 300px;
+    border-color: transparent;
 
     /* border:1px solid silver; */
 }
@@ -126,19 +206,144 @@ a:hover {
     top: 15vh;
   }
 .social-media {
-    width: 10%;
-    height: 10%;
+    display: flex;
+    margin-right: 1%;
+    margin-top: 1%;
 }
-
-@media only screen 
-and (max-device-width: 812px) {
-    .social-media{
-        /* width: 100px;
-        height: 75px; */
+.grey-out {
+    background-color: rgba(189, 195, 199, 0.7);
+    position: fixed;    
+    width: 100%;
+    height: 100%;
+    z-index: 8888;
+    display:none;
+}
+.img-modal {
+    position: fixed; 
+    left: 0;   
+    transform: translateX(12%); 
+    display: none;
+    height: 90vh;
+    background-color: white;
+    border: 5px solid	rgba(224,199,221);
+    border-radius: 5%;  
+    z-index: 9999;
+    width: 80%;
+    top: 3vh;
+} #close-button{
+    border-color: transparent;
+   background-color: transparent;
+   padding-right: 2px;
+}
+#close-modal {
+    border-radius: 5%;
+}
+/* Media Queries ----- For computer Screen Sizes  */
+@media (max-width: 1392px) {
+    .graphic-sample {
+        width: 32.9%;
     }
 }
-.nav-tabs {
-    border-bottom: 2px solid grey;
-    opacity: 0.8;
+@media (max-width: 1087px) {
+    .graphic-sample {
+        width: 32.8%;
+    }
+}
+@media (max-width: 892px) {
+    .graphic-sample {
+        width: 32.7%;
+    } 
+}
+  @media (max-width: 774px) {
+
+    .about-me-header {
+        margin-top: 10%;
+
+    }   
+    /* .graphic-container {
+      margin-left: 2%;
+        } */
+
+    .hamburger-menu {
+        margin-left: 7%;
+    }
+    .logo {
+        margin-top: 2.5%;
+    }
+    .img-modal {
+        width: 90vw;  
+        transform: translateX(5%);  
+    }
+  .video-container {
+      border-color: transparent;
+  }
+  .about-me-img {
+      height: 80%;
+  }
+}
+@media only screen (max-width:767px) {
+    .about-me-container {
+        margin-left: 2%;
+        transform: translate(0) !important;
+    }
+    .about-me-header {
+        margin-left: 0;
+    }
+    .about-me-img {
+        height:90%;
+        width:65%;
+        margin-bottom: 5%;
+    }
+    .about-me-paragraph {
+        margin-top: 0 !important;
+    }
+}
+@media (min-width:768px) and
+(max-width:834px) {
+   .about-me-img-container {
+    margin-top: 15% !important;}
+}
+/* Minimum Width Media Queries */
+@media (max-width:623px) {
+    .graphic-sample {
+        width: 100%;
+    }
+    .graphic-detail-img {
+        width:80%;
+    }
 }
 
+/* Phone Screen Media Queries  */
+@media only screen 
+  and (max-device-width: 415px) {
+      .col-md-6 .pull-right {
+          margin-bottom: 50% !important;
+      }
+    .social-media {
+        float: none !important;
+        margin-left: 7%;
+    }
+  
+  }
+  @media only screen 
+  and (max-device-width: 320px) {
+    .social-media {
+        float: none !important;
+        margin-left: 0;
+    }
+ 
+    .logo {
+        left: 57%;
+    }
+}
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+      .social-media {
+          float: none !important;
+          margin-left: 0%;
+       
+      }
+    }
+  
