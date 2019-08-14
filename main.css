@@ -73,7 +73,6 @@ body {
     border-radius: 100%;
     width: 100%;
     margin-top: 10%;
-    transform: rotate(270deg);
 }
 
 .about-me-container {
@@ -255,15 +254,10 @@ a:hover {
     } 
 }
   @media (max-width: 774px) {
-
     .about-me-header {
         margin-top: 10%;
 
     }   
-    /* .graphic-container {
-      margin-left: 2%;
-        } */
-
     .hamburger-menu {
         margin-left: 7%;
     }
@@ -277,11 +271,8 @@ a:hover {
   .video-container {
       border-color: transparent;
   }
-  .about-me-img {
-      height: 80%;
-  }
 }
-@media only screen (max-width:767px) {
+@media (max-width:767px) {
     .about-me-container {
         margin-left: 2%;
         transform: translate(0) !important;
@@ -290,8 +281,7 @@ a:hover {
         margin-left: 0;
     }
     .about-me-img {
-        height:90%;
-        width:65%;
+       width: 60%;
         margin-bottom: 5%;
     }
     .about-me-paragraph {
