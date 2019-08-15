@@ -31,17 +31,17 @@
       </div>
       <div class="hamburger-list" id="hamburger-list" style="display:none">
           <div class="hamburger-list-container" style="top:0;"> 
-              <div class="hamburger-list-item" id="home">Home</div>
+              <div class="hamburger-list-item" target="home">Home</div>
               <!-- <div class="hamburger-list-item" id="videos">Videos</div>
               <div class="hamburger-list-item" id="gallery">Gallery</div>
               <div class="hamburger-list-item" id="about">Resume/CV</div>
               <div class="hamburger-list-item" id="services">Services</div> -->
-              <div class="hamburger-list-item" id="contact">About Me</div>
+              <div class="hamburger-list-item" target="about-me">About Me</div>
           </div>
       </div>
   </div>
   <!------ Wide Nav Bar ---------------->
-  <div class="logo-container">
+  <div id="home" class="logo-container">
     <img class="logo"src="./images/AngelaMedia-logo.png">
   </div>
   <nav class="d-none d-md-block  flex-row mx-auto">
@@ -58,7 +58,9 @@
               aria-selected="false">Resume/CV</a>
             <a class="nav-item nav-link" id="nav-services-tab" data-toggle="tab" href="#nav-services" role="tab"
               aria-controls="nav-services" aria-selected="false">Services</a> -->
-            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+            <!-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#about-me" role="tab" aria-controls="nav-contact"
+              aria-selected="false">About Me</a> -->
+              <a class="nav-item nav-link" id="nav-contact-tab"  href="#about-me"  aria-controls="nav-contact"
               aria-selected="false">About Me</a>
           </div>
     </div>
@@ -71,13 +73,16 @@
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
           <div class="col-md-12 img-modal">
-              <div class="row pull-right" id="close-modal"> <button id="close-button">X</button></div>
+              <!-- <div class="row pull-right" id="close-modal"> <button id="close-button">X</button></div> -->
           <div class="graphic-detail-image-container justify-content-center  row">
                   <img id="graphic-detail-image" src="./images//Business-Photo.jpg" class="graphic-detail-img">
           </div>
           <div class="row justify-content-center">
               <p class="graphic-detail-desc pargraph text-center" id="graphic-detail-desc">
               </p>
+          </div>
+          <div class="row justify-content-center">
+            <button id="close-modal">Back</button>
           </div>
       
             </div>
@@ -110,7 +115,7 @@
               </div>
           </div>
           <div class="about-me-container row col-md-8 offset-md-2 col-sm-12 text-center">
-            <h1 class="col-md-8 about-me-header  ">About Me</h1>
+            <h1 class="col-md-8 about-me-header" id="about-me">About Me</h1>
             <div class="col-md-6 about-me-img-container">
                 <img src="./images//angelaprofile.jpeg" class="about-me-img">
             </div>
@@ -196,7 +201,7 @@
 
 
     </div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+    <!-- <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
         <section id="contact" class="add-padding">
 		
             <div class="container text-center">
@@ -221,7 +226,7 @@
                           <div><a href="https://www.facebook.com/angelamediaofficial/" target="_blank"><img class="img-responsive social-media" src='./images/F_icon.svg'></img></a>
                             <a href="https://www.facebook.com/angelamediaofficial/" target="_blank"><p>facebook.com/angelamediaofficial</p></a></div>
                      
-                </div>
+                </div> -->
 			<!--=== Contact Form ===-->
 				<!-- <form id="contact-form" class="col-sm-6 scrollimation fade-right" action="php_mailer/contact.php" method="post"
 				 novalidate>

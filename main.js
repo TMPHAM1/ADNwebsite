@@ -5,12 +5,12 @@ function initializeApp() {
 }
 
 var description = 
-    {"project1": "descrption of project1",
-    "project2": "Description of project2",
-    "project3": "descrption of project3",
-    "project4": "Description of project4",
-    "project5": "descrption of project5",
-    "project6": "Description of project6"
+    {"project1": "",
+    "project2": "",
+    "project3": "",
+    "project4": "",
+    "project5": "",
+    "project6": ""
 }
 
 function applyClickHandlers() {
@@ -19,16 +19,22 @@ function applyClickHandlers() {
     $(".graphic-sample").click(displayDetails);
     $("#close-modal").click(closeModal);
     $(".graphic-focus").click(closeModal);
+    $(".graphic-focus").click(closeHamburger);
+
 //   $(document).not(".hamburger-menu").click(checkHamburger);
 }
 
 function navigateHamburger(event) { 
     var clickedListItem = event.target;
-    var page = $(clickedListItem).attr("id");
-    $(".tab-pane").removeClass("show");
-    $(".tab-pane").removeClass("active");
-    $(`#nav-${page}`).addClass("show");
-    $(`#nav-${page}`).addClass("active");
+    var id= $(clickedListItem).attr("target");
+    console.log(id);
+    var page = document.getElementById(id);
+    page.scrollIntoView();
+    // $(".tab-pane").removeClass("show");
+    // $(".tab-pane").removeClass("active");
+    // $(`#nav-${page}`).addClass("show");
+    // $(`#nav-${page}`).addClass("active");
+    $(".graphic-focus").hide();
     $(".hamburger-list").hide();
 
 }
@@ -50,6 +56,7 @@ function closeModal() {
     $(".graphic-focus").hide();
     $(".img-modal").hide();
 }
+
 // function checkHamburger(event) {
 //     console.log("here")
 //    if (event.target.closest(".hamburger-list-container")) {
@@ -64,10 +71,14 @@ function closeModal() {
 //    $(".hamburger-list").hide();
 
 // }
-
+function closeHamburger() {
+    $(".graphic-focus").hide();
+    $(".hamburger-list").hide();
+   
+}
 function toggleHamburger() {
     $(".hamburger-list").show();
-
+    $(".graphic-focus").show();
 }
 // $(function() {
 //     $("#playlist img").on("click", function() {
