@@ -37,12 +37,15 @@ body {
     vertical-align: middle;
     width: 33%;
   }
-  /* .graphic-detail-img {
+  #graphic-detail-image {
     margin-top: 8px;
     vertical-align: middle;
-    /* width: 50%; */
-    /* margin-right: 7% */
-  } */
+    height: 80%;
+    
+  }
+  .graphic-detail-image-container {
+    height: 80% !important;
+  }
 .nav-tabs {
     border-color: transparent;
 }
