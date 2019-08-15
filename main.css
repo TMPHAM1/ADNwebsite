@@ -37,12 +37,12 @@ body {
     vertical-align: middle;
     width: 33%;
   }
-  .graphic-detail-img {
+  /* .graphic-detail-img {
     margin-top: 8px;
     vertical-align: middle;
     /* width: 50%; */
     /* margin-right: 7% */
-  }
+  } */
 .nav-tabs {
     border-color: transparent;
 }
@@ -386,8 +386,8 @@ a:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
 
-    .graphic-detail-img {
+    /* .graphic-detail-img {
         height: 10%;
-    }
+    } */
 }
   
