@@ -387,7 +387,7 @@ a:hover {
   and (orientation: portrait) { 
 
     .graphic-detail-img {
-        width: 10%;
+        height: 10%;
     }
 }
   
