@@ -316,9 +316,7 @@ a:hover {
        width: 60%;
         margin-bottom: 5%;
     }
-    .graphic-detail-img {
-        width: 60%;
-    }
+   
     .about-me-paragraph {
         margin-top: 0 !important;
     }
@@ -379,4 +377,17 @@ a:hover {
 
       }
     }
+
+/* Fixing Graphic Images */
+/*Iphone 6,7,8 both Portrait and landscape*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 375px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    .graphic-detail-img {
+        width: 60%;
+    }
+}
   
