@@ -300,7 +300,6 @@ a:hover {
         height: 70px;
     }
     .img-modal {
-        width: 90vw;  
         transform: translateX(5%);  
     }
   .video-container {
@@ -391,9 +390,6 @@ a:hover {
     .graphic-detail-image-container {
        
         
-    }
-    .graphic-detail-img {
-        width: 80% !important;
     }
 }
   
