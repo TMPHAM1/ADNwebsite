@@ -219,6 +219,7 @@ a:hover {
 .center {
     top: 15vh;
   }
+
 .social-media {
     display: flex;
     margin-right: 1%;
@@ -307,6 +308,7 @@ a:hover {
       border-color: transparent;
   }
 }
+
 @media (max-width:767px) {
     .about-me-container {
         margin-left: 2%;
@@ -338,7 +340,11 @@ a:hover {
     .graphic-sample {
         width: 100%;
     }
+    .logo {
+        max-height: 11%;
+    }
 }
+
 
 /* Phone Screen Media Queries  */
 @media only screen 
