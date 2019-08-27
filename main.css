@@ -309,6 +309,11 @@ a:hover {
   }
 }
 
+@media(min-width: 1228px) {
+    .about-me-paragraph {
+        font-size: 1.2rem;
+    }
+}
 @media (max-width:767px) {
     .about-me-container {
         margin-left: 2%;
@@ -399,9 +404,12 @@ a:hover {
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
     #graphic-detail-image {
-     
         height: 70%;
-        
+      }
+      .logo {
+        margin-left: -40    px !important;
+
       }
 }
+
   
